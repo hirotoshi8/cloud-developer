@@ -1,5 +1,5 @@
 import express from 'express';
-//import {Request, Response } from 'express';
+import {Request, Response } from 'express';
 import bodyParser from 'body-parser';
 import {filterImageFromURL, deleteLocalFiles} from './util/util';
 //import { url } from 'inspector';
