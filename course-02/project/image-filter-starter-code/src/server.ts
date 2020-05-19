@@ -42,7 +42,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
         return res.status(400).send(`url is required`);
       }
       //2. call filterImageFromURL(image_url) to filter the image
-      let filtered_image = await filterImageFromURL("image_url");
+      let filtered_image = await filterImageFromURL(image_url);
 
       //3. send the resulting file in the response
       // respond not found, if we do not have this request
