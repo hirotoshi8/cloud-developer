@@ -18,6 +18,16 @@ router.get('/', async (req: Request, res: Response) => {
 
 //@TODO
 //Add an endpoint to GET a specific resource by Primary Key
+// Get a signed url to put a new item in the bucket
+/*
+router.get('/signed-url/test.jpg', 
+    requireAuth, 
+    async (req: Request, res: Response) => {
+    let { fileName } = req.params;
+    const url = AWS.getPutSignedUrl(fileName);
+    res.status(201).send({url: url});
+});
+*/
 
 // update a specific resource
 router.patch('/:id', 
